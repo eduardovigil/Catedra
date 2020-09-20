@@ -1,0 +1,40 @@
+.contactForm {
+	font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin: auto;
+	max-width: 450px;
+	overflow: hidden;
+}
+.contactForm .formHeader {
+	background: #0f4c75;
+	border-bottom: 4px solid #0f4c75;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+.contactForm .formHeader h1 {
+	line-height: 1em;
+}
+.contactForm .formBody {
+	background: #f7e75a;
+	padding: 20px 12px;
+	overflow: hidden;
+	transition: all 0.2s ease;
+}
+.contactForm .submitBtn {
+	background: #080807;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	font: inherit;
+	padding: 10px 18px;
+	margin-top: 10px;
+	float: right;
+	width: auto;
+	transition: background 0.5s ease;
+}
+.contactForm .submitBtn:hover {
+	background: #343a40;
+}
