@@ -36,6 +36,6 @@ class valor{
 btn.addEventListener("click",function(){
     var obj = new Miembro();
     obj.validarnomape(banco.value);
-    obj.validarnumero(efectivo.value)
+    obj.validarnumero(efectivo.value);
     obj.validarnumero2(cuenta.value);
 });

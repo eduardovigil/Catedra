@@ -8,6 +8,7 @@ var numero = document.getElementById("numero")
 var nit = document.getElementById("nit");
 var out = document.getElementById("out");
 var btn = document.getElementById("btn");
+var btn2 = document.getElementById("btn2");
 var id;
 var letra;
 var letra2;
@@ -110,9 +111,14 @@ class Miembro{
 btn.addEventListener("click",function(){
     var obj = new Miembro();
     obj.setNombres(nombres.value);
-    obj.setEmail(email.value)
+    obj.setEmail(email.value);
     obj.setContra(contra.value, contraC.value);
     obj.setNacimiento(nacimiento.value);
     obj.validarnit(nit.value);
     obj.validartarjeta(tarjeta.value);
+});
+btn.addEventListener("click",function(){
+    var obj = new Miembro();
+    obj.setNombres(nombres.value);
+    obj.setContra(contra.value);
 });
