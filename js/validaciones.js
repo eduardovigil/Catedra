@@ -25,7 +25,7 @@ class Miembro{
         this.numero="";
     }
     validarnomape(nombres){ 
-        var nombres = new RegExp('^[a-zA-ZáéíóúÁÉÍÓ]{1,30}[ ][a-zA-ZáéíóúÁÉÍÓÚ]{1,30}$');
+        var pattern = new RegExp('^[a-zA-ZáéíóúÁÉÍÓ]{1,30}[ ][a-zA-ZáéíóúÁÉÍÓÚ]{1,30}$');
         if (nombres == null || nombres== "" || !pattern.test(nombres)) { 
         return false; 
         }else{
