@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard | Pagos e Ingresos</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/earth.png" />
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <script src="js/clases.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/movimientos.js"></script>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">eWallet</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+              <a href="#" class="d-block" id="username">Alexander Pierce</a>
+          <button type="button" class="btn btn-secondary" id="logout">Cerrar Sesión</button>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="agregar.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Billetera</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="movimientos.html" class="nav-link active">
+              <i class="fas fa-circle nav-icon"></i>
+              <p>Pagos e Ingresos</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="movimientosList.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Movimientos</p>
+            </a>
+          </li>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <div class="content-wrapper">
+    <div class="content-header">
+
+    </div>
+
+    <section class="content">
+
+      <div class="container justify-content-center">
+        <div class="row justify-content-center">
+          <h1>Pagos e Ingresos</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-header">
+                <h3>Nuevo Pago</h3>
+            </div>
+            <div class="card-body">
+                <form id="formGasto">
+                  <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="formGasto-error">
+                    <h4>Listado de Errores</h4>
+                    <ul id="formGasto-error-ul">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-primary" id="formGasto-btn-Modal1-Open" data-toggle="modal" data-target="#exampleModal">
+                      Seleccionar Método de Pago
+                    </button>
+                  </div>
+                    <div class="form-row" id="formGasto-metodoSelect">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="formGasto-motivo">Motivo</label>
+                      <select class="custom-select custom-select-lg mb-3" id="formGasto-motivo">
+                          
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="formGasto-saldo">Saldo</label>
+                      <input type="text" class="form-control" id="formGasto-saldo" placeholder="Saldo" required>
+                    </div>
+                    <input type="hidden" name="tipo" id="formGasto-tipo">
+                    <input type="hidden" name="metodo" id="formGasto-metodo">
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+            <div class="card-footer">
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Método de Pago</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Efectivo</h4>
+                      <div class="row" id="formGasto-efectivos">
+                          
+                      </div>
+                        <h4>Cuentas Bancarias</h4>
+                      <div class="row" id="formGasto-cuentas">
+                      </div>
+                        <h4>Tarjetas de Crédito</h4>
+                      <div class="row" id="formGasto-tarjetas">
+                          
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" id="formGasto-btn-Modal1" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-header">
+                <h3>Nuevo Ingreso</h3>
+            </div>
+            <div class="card-body">
+                <form id="formIngreso">
+                  <div class="alert alert-danger alert-dismissible fade show" style="display: none;" id="formIngreso-error">
+                    <h4>Listado de Errores</h4>
+                    <ul id="formIngreso-error-ul">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                </div>
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary" id="formIngreso-btn-Modal1-Open" data-toggle="modal" data-target="#exampleModal2">
+                        Seleccionar Método de Pago
+                      </button>
+                    </div>
+                    <div class="form-row" id="formIngreso-metodoSelect">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="formIngreso-motivo">Motivo</label>
+                      <input type="text" name="formIngreso-motivo" class="form-control" id="formIngreso-motivo" placeholder="Motivo" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="formIngreso-saldo">Saldo</label>
+                      <input type="text" class="form-control" id="formIngreso-saldo" placeholder="Saldo" required>
+                    </div>
+                    
+                    <input type="hidden" name="tipo" id="formIngreso-tipo">
+                    <input type="hidden" name="metodo" id="formIngreso-metodo">
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                  </form>
+            </div>
+            <div class="card-footer">
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Método de Pago</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Efectivo</h4>
+                      <div class="row" id="formIngreso-efectivos">
+                          
+                      </div>
+                        <h4>Cuentas Bancarias</h4>
+                      <div class="row" id="formIngreso-cuentas">
+                      </div>
+                        <h4>Tarjetas de Crédito</h4>
+                      <div class="row" id="formIngreso-tarjetas">
+                          
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" id="formIngreso-btn-Modal1" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <button type="button" class="" id="Modal3-Open" style="display: none" data-toggle="modal" data-target="#exampleModal3">
+          Seleccionar Método de Pago
+        </button>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Método de Pago</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4>Balances</h4>
+                <div class="row" id="tarjetas">
+                    
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="btn-Modal3" data-dismiss="modal">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+
+        
+        
+    </section>
+  </div>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</body>
+</html>

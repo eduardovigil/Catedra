@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>eWallet</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/earth.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/StyleFormulario.css">
+        <script src="js/clases.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/naturalSession.js"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">e-Wallet</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Ofrecimientos</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contáctenos</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.html" id="log">Ingresar</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="dashboard.html" id="dash" style="display: none;">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#" id="logout" style="display: none;">Cerrar Sessión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Bienvenido/a a nuestro banco eWallet!</div>
+                <div class="masthead-heading text-uppercase">Encantados de poder ayudarle con su dinero</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Dime más</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Servicios</h2>
+                    <h3 class="section-subheading text-muted">Un buen servicio, es un buen negocio.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-dollar-sign fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Ahorros</h4>
+                        <p class="text-muted">
+                            E-Wallet te ofrece opciones para que puedas ahorrar para que puedas alcanzar tus sueños hasta
+                            donde tú quieras.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="far fa-credit-card fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Tarjetas</h4>
+                        <p class="text-muted">
+                            Disfruta de los mejores beneficios que te ofrecemos con nuestras tarjetas de Débito y Crédito
+                            de nuestro sistema.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="far fa-money-bill-alt fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Créditos</h4>
+                        <p class="text-muted">
+                            E-Wallet te ofrece las mejores opciones de crédito para que lleves todos tus proyectos hasta
+                            donde quieras.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">¿Qué le ofrecemos?</h2>
+                    <h3 class="section-subheading text-muted">Comodidades para que usted, que es él cliente se sienta a gusto con nosotros.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/pago-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Pagos</div>
+                                <div class="portfolio-caption-subheading text-muted">Ver más</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/consulta-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Consultas</div>
+                                <div class="portfolio-caption-subheading text-muted">Ver más</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/seguridad-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Seguridad</div>
+                                <div class="portfolio-caption-subheading text-muted">Ver más</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/transacciones-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Transacciones</div>
+                                <div class="portfolio-caption-subheading text-muted">Ver más</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/prestamos-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Créditos</div>
+                                <div class="portfolio-caption-subheading text-muted">Ver más</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/cheques-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Cambios de cheques</div>
+                                <div class="portfolio-caption-subheading text-muted">Ver más</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Nuestro increíble equipo</h2>
+                    <h3 class="section-subheading text-muted">El trabajo en equipo es lo mejor para obtener un buen desempeño.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                            <h4>Christopher Muñoz</h4>
+                            <p class="text-muted">Estudiante de la UDB</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpeg" alt="" />
+                            <h4>Eduardo Vigil</h4>
+                            <p class="text-muted">Estudiante de la UDB</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpeg" alt="" />
+                            <h4>William Solano</h4>
+                            <p class="text-muted">Estudiante de la UDB</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contáctenos</h2>
+                    <h3 class="section-subheading text-muted">Cualquier sugerencia es bienvenida.</h3>
+                </div>
+                <div id="contactForm" class="contactForm">
+                    <div id="formBody" class="formBody">
+                        <form action="" method="POST" name="contactForm">
+                            <div>
+                                <input class="form-control form-control-lg" name="name" id="Name" type="text" onkeypress="return Letras(event)" onpaste="return false" required placeholder="Ingrese su nombre">
+                            </div>
+                            <span id="nameOK"></span>
+                            <br>
+                            <div>
+                                <input class="form-control form-control-lg" name="email" id="Email" type="email" placeholder="Ingrese su correo electrónico">
+                            </div>
+                            <span id="emailOK"></span>
+                            <br>
+                            <div>
+                                <textarea class="form-control form-control-lg" name="feedback" id="Message" rows="10" required placeholder="Ingrese su mensaje"></textarea>
+                            </div>
+                            <span id="messageOK"></span>
+                            <input id="submitBtn" class="submitBtn" type="submit" value="Enviar mensaje">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © e-Wallet 2020</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                        <a class="mr-3" href="#!">Política de privacidad</a>
+                        <a href="#!">Términos de Uso</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Detalles-->
+                                    <h2 class="text-uppercase">Pagos</h2>
+                                    <p class="item-intro text-muted">Información.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/pago-full.jpg" alt="" />
+                                    <p>
+                                        En este apartado podrás ir a conocer los diferentes métodos de pago que
+                                        te ofrece nuestro banco para poder realizar tus pagos con las diferentes deudas que
+                                        tengas o poder verificar que se hayan realizado correctamente. Espero que te guste.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Detalles-->
+                                    <h2 class="text-uppercase">Consultas</h2>
+                                    <p class="item-intro text-muted">Información.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/consulta-full.jpg" alt="" />
+                                    <p>
+                                        En este apartado podrás ir a consultar tu cuenta de banco que tienes
+                                        con nosotros para así ver que todo este correcto con tu dinero y que este todo bien con
+                                        tu dinero y con tus diferentes pagos que has realizado. Espero que te guste.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Detalles-->
+                                    <h2 class="text-uppercase">Seguridad</h2>
+                                    <p class="item-intro text-muted">Información.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/seguridad-full.jpg" alt="" />
+                                    <p>
+                                        En este apartado podrás ir a consultar con nosotros sobre el manejo y cómo es que se
+                                        se va guardando el dinero en su cuenta, y que se sienta seguro que su dinero se encuentra
+                                        a salvo con nosotros.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Datalles-->
+                                    <h2 class="text-uppercase">Transacciones</h2>
+                                    <p class="item-intro text-muted">Información.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/transacciones-full.jpg" alt="" />
+                                    <p>
+                                        En este apartado usted podrá consultar sobre las transacciones que se pueden realizar
+                                        en nuestro banco o sí es el caso que usted es ya un cliente nuestro, podrá ver las
+                                        transacciones que usted ha realizazdo en los últimos 6 meses.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Detalles-->
+                                    <h2 class="text-uppercase">Créditos</h2>
+                                    <p class="item-intro text-muted">Información.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/prestamos-full.jpg" alt="" />
+                                    <p>
+                                        En este apartado podrá verificar sí usted puded aplicar a un crédito con nuestro sí
+                                        es una persona o sí es cliente de nosotros, y existen diversos prestamos de diferentes 
+                                        cantidades, a los cuales usted puede ver para cuál aplica.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Detalles-->
+                                    <h2 class="text-uppercase">Cambios de cheques</h2>
+                                    <p class="item-intro text-muted">Información.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/cheques-full.jpg" alt="" />
+                                    <p>
+                                        En este apartado podrá realizar los cambios de cheques en el caso usted ha recibido
+                                        un pago de esa forma, con nosotros podrá cambiarlo, siempre y cuando la cuenra de 
+                                        donde se obtendrá el diner tenga los suficientes fondos.
+                                    </p>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Cerrar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="js/contacto.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

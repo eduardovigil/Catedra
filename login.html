@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/StyleLogin.css" />
+  <title>eWallet</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/earth.png" />
+  <script src="js/main.js"></script>
+  <script src="js/naturalSession.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="dashboard.html" class="sign-in-form" id="login">
+          <h2 class="title">Iniciar sesión</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Email" id="username"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" id="pass"/>
+          </div>
+          <input type="submit" value="Iniciar sesión" class="btn solid" id="btn2" />
+          <input type="button" onclick="location.href='index.html'" class="btnRegresar" value="Regresar" />
+        </form>
+        <form action="regitro.html" class="sign-up-form" id="form">
+          <br>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nombres" id="Nombres"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" id="email"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" id="password"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" id="passwordC"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-route"></i>
+            <input type="text" placeholder="Dirección" id="direc"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-id-card"></i>
+            <input type="text" placeholder="DUI" id="dui"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-id-card"></i>
+            <input type="text" placeholder="NIT" id="nit"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-phone-square-alt"></i>
+            <input type="text" placeholder="Número De Celular" id="numero"/>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-calendar-week"></i>
+            <input type="date" placeholder="Fecha De Nacimiento" id="FN"/>
+          </div>
+          <input type="submit" class="btn" value="Registrar" id="btn"/>
+        </form>
+        <br>
+      </div>
+    </div>
+
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>¿Usted busca un banco seguro para gurdar su dinero?</h3>
+          <p>
+            Se encuentra en el lugar correcto, e-Wallet es un banco seguro para que 
+            usted pueda guardar dinero de un forma segura y confiable.
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            Regístrate
+          </button>
+        </div>
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>¿Usted ya es un afiliado del banco?</h3>
+          <p>
+            Inicie sesión para poder hacer uso de nuestra plataforma.
+          </p>
+          <button class="btn transparent" id="sign-in-btn" >
+            Inicio de sesión
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/clases.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/logueo.js"></script>
+</body>
+
+</html>
