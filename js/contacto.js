@@ -46,5 +46,6 @@ document.getElementById('submitBtn').addEventListener("click", function () {
         return false;
     } else {
         alert('Su mensaje fue enviado correctamente');
+        window.location='index.html';
     }
 });
